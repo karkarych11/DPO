@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>website</title>
+        <link rel="stylesheet" href="animation_maket.css">
+        <script src="Js/js.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="wrapped">
+                    <div class="offer">
+                        <img src="img/logo.png" alt="logo" class="logo">
+                        <h1 class="main_1" id="main_1"> Help Us <br>
+                        you will be able to create what<h1>
+                        <span class="main_span">tou wish</span>
+                        <p class="offer_text">Belle, est-ce le diable qui s'est incarné en elle
+                            Pour détourner mes yeux du Dieu éternel ?
+                            Qui a mis dans mon être ce désir charnel
+                            Pour m'empêcher de regarder vers le Ciel
+                            Elle porte en elle le péché originel
+                            La désirer fait-il de moi un criminel</p>
+                        <a href="#" class="but">Learn more</a>   
+                    </div> 
+                </div>
+                <div class="header_pic">
+                    <img class="header__img" src="img/header-img.png" alt="picture" class="header_img">
+                </div>
+            </div>
+        </header>
+
+       <section class="main_info">
+        <h2 class="main_title"> Что вам необходимо?</h2>
+        <div class="container">
+            <div class="main_dusk">
+                <div class="block">
+                    <img class="main_img" src="img/f3.png" alt="ballon" class="main">
+                    <h3 class="main_blc"> Первый блок </h3>
+                    <p class="main_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolores autem exercitationem necessitatibus perspiciatis mollitia fugit nihil atque illo, et explicabo, voluptates asperiores neque veniam voluptas corrupti qui, aliquam minus.</p>
+                </div>
+                <div class="block">
+                    <img class="main_img" src="img/f4.png" alt="ballon" class="main">
+                    <h3 class="main_blc"> Второй блок </h3>
+                    <p class="main_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolores autem exercitationem necessitatibus perspiciatis mollitia fugit nihil atque illo, et explicabo, voluptates asperiores neque veniam voluptas corrupti qui, aliquam minus.</p>
+                </div>
+                <div class="block">
+                    <img class="main_img" src="img/f5.png" alt="ballon" class="main">
+                    <h3 class="main_blc"> Третий блок </h3>
+                    <p class="main_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolores autem exercitationem necessitatibus perspiciatis mollitia fugit nihil atque illo, et explicabo, voluptates asperiores neque veniam voluptas corrupti qui, aliquam minus.</p>
+                </div>
+            </div>
+        </div>
+       </section>
+       
+       <section class="input-form2" id="register-form">
+        <h2 class="input-text2">Форма регистрации на сайте</h2>
+        <div class="container">
+            <form action="#" method="post" onsubmit="return handleSubmit(event);">
+                <input name="login" id="login2" placeholder="Логин" onchange="checkLogin();">
+                <span id="login_Check"></span>
+    
+                <input name="email" id="email2" placeholder="Напишите свой E-mail" onchange="checkEmail();">
+                <span id="email_Check"></span>
+    
+                <input name="phone" id="phone2" placeholder="Телефон" onchange="checkPhone();">
+                <span id="phone_Check"></span>
+    
+                <input name="password" type="password" id="password2" placeholder="Пароль" onchange="checkPassword();">
+                <span id="password_Check"></span>
+    
+                <button type="submit" class="input-but">Зарегистрироваться</button>
+            </form>
+        </div>
+    </section>
+    
+    <section class="form">
+        <h2 class="form_text">Форма заказа обратного звонка</h2>
+        <div class="container">
+            <form action="#">
+                <input type="text" name="user_name" id="user_name" placeholder="Имя" required minlength="2">
+                <input type="email" name="user_email" id="user_email" placeholder="Напишите свою почту" required>
+                <input type="tel" name="tell" id="tell" placeholder="Телефон" pattern="(?:\+7|8)(?:-\d{2,3}){4}" required>
+                <input name="user_question" placeholder="Какой вопрос Вас интересует?" type="text">
+                <button class="form_but">Отправить вопрос!</button>
+            </form>
+        </div>
+    </section>
+    
+       <footer class="footer">
+        <p class="footer_text">© Вся информация на этом сайте защищена<br>
+        Выполнила работу Караматуллина Азалия РИ-322901</p>
+       </footer>
+
+    </body>
+</html>

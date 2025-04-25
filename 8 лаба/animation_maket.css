@@ -1,0 +1,416 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 15px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+/*хедер начало*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    padding-top: 20px;
+   
+    
+   
+}
+
+.header{
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 140px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    margin-top: 10px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.wrapped{/*контейнер основной, котрый будет дублировать*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.offer{ /*контейнер для текста и кнопки*/
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+
+}
+
+
+  
+
+
+.main_1{ /*текст*/
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.main_span{
+    font-size: 48px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.offer_text{
+    font-size: 15px;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.text{
+    padding: 30 px 30px;
+    background-color: coral;
+}
+
+.header_pic{
+    margin-top: 30px;
+    width: 480px;
+    margin-left: 70px;
+    
+}
+
+.but{
+    background-color: #ffd20b;
+    width: 220px;
+    height: 55px;
+    font-weight: bold;
+    color: black;
+    display: block;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all 0.5s ease; /*animation*/
+    
+}
+.but:hover{
+    background-color: #000000;
+    cursor: pointer;
+    color:aliceblue
+
+}
+/*хедер окончен*/
+
+/*основные блоки*/
+
+.main_info{
+    background-color: #FFFFFF;
+    padding: 50px auto;
+    text-align: center;
+
+}
+
+.main_title{
+    font-size: 30px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 900;
+    display: grid;
+    place-items: center;
+
+}
+
+.main_dusk{
+    display: flex;
+    flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.block{
+    width: 30%;
+    padding-top: 50px;
+}
+
+.main_img{
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 25px;
+}
+.main_blc{
+    font-size: 25px;
+    margin-bottom: 10px;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+
+  
+@keyframes slidein {
+from {
+    margin-left: 30%;
+    width: 30%;
+}
+  
+to {
+    margin-left: 0%;
+    width: 50%;
+}
+}
+.main_text{
+    color: #666;
+}
+
+
+/*форма обратной связи*/ /*форма регистрации*/
+
+form{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form{
+    background-color: #e3f1fa;
+    padding: 50px 0;
+    text-align: center;
+        
+}
+.input-text2, .form_text{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.input-form2{
+    background-color: #95c5e3;
+    padding: 50px 0;
+    text-align: center;
+    
+   
+}
+
+.register-form{
+    width: 100%;
+    max-width: 1200px; 
+}
+
+
+input{
+    width: 65%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(35,105,166,1);
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+
+.form_but, .input-but{
+    width: 65%;
+    margin-top: 10px;
+	background-color: #ffd20b;
+	color: black;
+	padding: 15px 30px;
+	border-radius: 5px;
+	cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease; /*animation*/
+}
+
+.form_but:hover{
+	background-color: #000000;
+    cursor: pointer;
+    color:aliceblue
+
+}
+
+.input-but:hover{
+	background-color: #000000;
+    cursor: pointer;
+    color:aliceblue
+}
+
+/* Футер */
+.footer{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;    color: white;
+    text-align: center;
+    padding: 20px 0;
+   }
+   .footer_text{
+       margin: 0;
+}
+@keyframes gradient {
+   0% {
+       background-position: 0% 50%;
+   }
+   50% {
+       background-position: 100% 50%;
+   }
+   100% {
+       background-position: 0% 50%;
+   }
+}
+
+/*Adaption*/
+
+@media screen and (max-width: 1199px) {
+    .container {
+        width: 900px;
+    }
+    .header__img {
+        width:400px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        width: auto;  
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .input-form {
+        width: auto; 
+        align-items: center;
+    }
+    .wrapped { /**/
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main_span { /*main span*/
+        font-size: 50px;
+    }
+
+    .header_pic { /*head pic*/
+        width: 80%;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .main_dusk { /*main desk*/
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-title { /*main blc*/
+        font-size: 24px;
+    }
+
+    .main_blc { /*main blc*/
+        font-size: 16px;
+    }
+
+    .main-text {
+        font-size: 14px;
+    }
+
+    .img {
+        width: 33%;
+        margin-bottom: 20px;
+    }
+
+    input, .input-button {
+         width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .container { 
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .input-form {
+        width: auto; 
+        align-items: center;
+    }
+
+    .wrapped {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    .main_span {
+        font-size: 50px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .header_pic {
+        width: 90%;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+
+
+    .main_dusk {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-title {
+        font-size: 22px;
+    }
+
+    .main_blc {
+        font-size: 14px;
+    }
+    .main-text {
+        font-size: 12px;
+    }
+
+    .img {
+        width: 33%;
+        margin-bottom: 15px;
+    }
+
+
+    input, .input-button {
+        width: 100%;
+   }
+
+}
